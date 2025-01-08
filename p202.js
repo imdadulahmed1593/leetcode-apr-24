@@ -54,3 +54,27 @@ var isHappy = function(n) {
 
     return false;    
 };
+
+
+// python 3
+// def jump(num: int) -> int:
+//     """Helper function to compute the sum of squares of digits of a number."""
+//     total = 0
+//     while num > 0:
+//         total += (num % 10) ** 2
+//         num //= 10
+//     return total
+
+// class Solution:
+//     def isHappy(self, n: int) -> bool:
+//         """
+//         Determines if a number is a happy number.
+//         A number is happy if repeatedly replacing the number with the sum of the 
+//         squares of its digits eventually leads to 1.
+//         """
+//         tortoise = jump(n)  # Moves one step
+//         hare = jump(jump(n))  # Moves two steps
+//         while tortoise != hare and hare != 1:
+//             tortoise = jump(tortoise)
+//             hare = jump(jump(hare))
+//         return hare == 1
