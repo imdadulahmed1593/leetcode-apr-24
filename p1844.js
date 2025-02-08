@@ -28,10 +28,7 @@
 // s consists only of lowercase English letters and digits.
 // // shift(s[i-1], s[i]) <= 'z' for all odd indices i.
 
-/**
- * @param {string} s
- * @return {string}
- */
+
 var replaceDigits = function (s) {
   for (let i = 1; i < s.length; i += 2) {
     let str = String.fromCharCode(s[i - 1].charCodeAt() + Number(s[i]));
