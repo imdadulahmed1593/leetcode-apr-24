@@ -34,6 +34,27 @@ const isAnagram = function (s, t) {
   return true;
 };
 
+// var isAnagram = function (s, t) {
+//   if (s.length !== t.length) return false;
+
+//   let freCounter1 = {};
+//   let freCounter2 = {};
+
+//   for (let char of s) {
+//     freCounter1[char] = (freCounter1[char] || 0) + 1;
+//   }
+//   for (let char of t) {
+//     freCounter2[char] = (freCounter2[char] || 0) + 1;
+//   }
+
+//   for (let char in freCounter1) {
+//     if (!(char in freCounter2)) return false;
+//     if (freCounter1[char] !== freCounter2[char]) return false;
+//   }
+
+//   return true;
+// };
+
 console.log(isAnagram("anagram", "nagaram")); // true
 console.log(isAnagram("cat", "car")); // false
 console.log(isAnagram("a", "ab")); // false
