@@ -23,17 +23,17 @@
 // }
 
 // A bit trickier approach - without using count
-// function countUniqueValues(arr) {
-//   if (arr.length === 0) return 0;
-//   let i = 0;
-//   for (let j = 1; j < arr.length; j++) {
-//     if (arr[i] !== arr[j]) {
-//       i++;
-//       arr[i] = arr[j];
-//     }
-//   }
-//   return i + 1;
-// }
+function countUniqueValues(arr) {
+  if (arr.length === 0) return 0;
+  let i = 0;
+  for (let j = 1; j < arr.length; j++) {
+    if (arr[i] !== arr[j]) {
+      i++;
+      arr[i] = arr[j];
+    }
+  }
+  return i + 1;
+}
 
 // SC - O(N), TC - O(N)
 // My soln - with frequency counter
