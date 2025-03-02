@@ -67,6 +67,23 @@ class SinglyLinkedList {
 
     return this;
   }
+  removeElements(val) {
+    let current = this.head;
+    let prev = null;
+    while (current) {
+      if (current.val === val) {
+        if (prev === null) {
+          this.head = current.next;
+        } else {
+          prev.next = current.next;
+        }
+        this.length--;
+      } else {
+        prev = current;
+      }
+      current = current.next;
+    }
+  }
 }
 
 let mySLL = new SinglyLinkedList();
