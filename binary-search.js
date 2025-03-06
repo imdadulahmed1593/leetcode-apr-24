@@ -1,5 +1,5 @@
 // given a sorted array of integers 'nums', write a function 'Search' that returns the index of the number 'target' in the array. If the number is not in the array, return -1.
-
+// binary Search - o(logn)
 function binarySearch(nums, target) {
   let start = 0;
   let end = nums.length - 1;
