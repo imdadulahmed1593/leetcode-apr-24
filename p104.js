@@ -9,12 +9,7 @@
 
 // Example 2:
 // Input: root = [1,null,2]
-// Output: 2
 
-/**
- * @param {TreeNode} root
- * @return {number}
- */
 
 var maxDepth = function (root) {
   if (!root) {
