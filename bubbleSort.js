@@ -1,4 +1,4 @@
-// bubbleSort
+// bubbleSort implementation 
 
 // function bubbleSort(arr) {
 //   for (let index = arr.length - 1; index >= 0; index--) {
