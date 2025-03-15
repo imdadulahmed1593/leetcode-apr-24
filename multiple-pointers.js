@@ -1,3 +1,4 @@
+// mulitple pointer lets you get rid of nested loops which reduces the time complexity
 // Count Unique Values
 // Implement a function "CountUniqueValues" that takes in an array of numbers and returns the number of unique values in the array.
 // There can be negative numbers in the array, but it will always be sorted.
