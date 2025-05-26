@@ -9,7 +9,6 @@
 // Example 2:
 // Input: root = [1,null,2]
 
-
 var maxDepth = function (root) {
   if (!root) {
     return 0;
