@@ -3,6 +3,7 @@
  * @param {number} k
  * @return {number}
  */
+
 var maximizeSum = function (nums, k) {
   // The formula for the sum of an arithmetic series is:
   // sum= (n/2)*(2*a + (n-1)*d)
